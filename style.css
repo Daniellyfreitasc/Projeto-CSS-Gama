@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'NTR', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(#1F1C2C, #928DAB) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    box-shadow: 1px 1px 10px 1px rgb(202, 199, 199);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 30px 20px 0;
+}
+
+header ul li img {
+    margin-bottom: 10px;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb(223, 217, 217);
+}
+
+header ul li a:hover {
+    color: #fefefe;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.container-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container-main {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.container-main h1 {
+    font-size: 60px
+}
+
+.container-main h5 {
+    font-size: 26px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+#arrow {
+    margin-bottom: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.active {
+    display: block !important;
+}
+
+#about-me p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.form p {
+    margin-bottom: 10px;
+}
+
+.form input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    -ms-border-radius: 5px 0px 0px 5px;
+    -o-border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 10px;
+    background-color: #1F1C2C;
+    font-weight: 600;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    margin-left: -5px;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -ms-border-radius: 0px 5px 5px 0px;
+    -o-border-radius: 0px 5px 5px 0px;
+}
+
+.form button:hover {
+    background-color: #5FFBF1;
+    transition: 300ms;
+}
+
+@media only screen and (max-width:768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container-main h1 {
+        font-size: 30px;
+    }
+    .container-main h5 {
+        font-size: 15px;
+    }
+    #about-me p {
+        max-width: 70%;
+    }
+    .form {
+        width: 100%;
+    }
+}
